@@ -34,6 +34,7 @@ class KWS(Element):
                 break
         if model == 'alexa':
             alexa_model = os.path.join(resource_path, 'alexa', 'alexa_02092017.umdl')
+            pwd_model=os.path.join(resource_path, 'ravan', 'ravan.imdl'
             if os.path.isfile(alexa_model):
                 model = alexa_model
         self.detector = snowboydetect.SnowboyDetect(common_resource.encode(), model.encode())
